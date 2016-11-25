@@ -8,13 +8,13 @@ class TestAccountTransaction(TestCase):
 
     def setUp(self):
         self.currency1 = Currency.objects.create(name="currency1")
-        self.currency2 = Currency.objects.create(name="currency1")
+        self.currency2 = Currency.objects.create(name="currency2")
 
         self.account1 = Account.objects.create(
             amount=25, currency=self.currency2)
 
         self.account2 = Account.objects.create(
-            amount=0,  currency=self.currency1)
+            amount=0,  currency=self.account1.currency)
 
     def test_transaction_succed(self):
         # user=
