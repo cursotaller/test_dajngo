@@ -20,13 +20,13 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 |type     |number |old number |difference |%documented |%badname |
 +=========+=======+===========+===========+============+=========+
-|module   |10     |150        |-140.00    |20.00       |30.00    |
+|module   |10     |10         |=          |20.00       |30.00    |
 +---------+-------+-----------+-----------+------------+---------+
-|class    |9      |233        |-224.00    |0.00        |0.00     |
+|class    |9      |9          |=          |0.00        |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
-|method   |6      |841        |-835.00    |50.00       |0.00     |
+|method   |6      |6          |=          |50.00       |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
-|function |0      |164        |-164.00    |0           |0        |
+|function |0      |0          |=          |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
 
 
@@ -39,15 +39,15 @@ External dependencies
       \-models (accounting.tests)
     django 
       \-apps (accounting.apps)
-      \-conf (accounting.migrations.0002_auto_20161125_1107,accounting.migrations.0001_initial)
+      \-conf (accounting.migrations.0001_initial,accounting.migrations.0002_auto_20161125_1107)
       \-contrib 
       | \-admin (accounting.admin)
       | \-auth 
       |   \-models (accounting.models)
       \-db 
-      | \-migrations (accounting.migrations.0003_auto_20161125_1113,accounting.migrations.0002_auto_20161125_1107,accounting.migrations.0001_initial)
+      | \-migrations (accounting.migrations.0003_auto_20161125_1113,accounting.migrations.0001_initial,accounting.migrations.0002_auto_20161125_1107)
       | \-models (accounting.migrations.0003_auto_20161125_1113,accounting.models,accounting.migrations.0002_auto_20161125_1107,accounting.migrations.0001_initial)
-      |   \-deletion (accounting.migrations.0002_auto_20161125_1107,accounting.migrations.0001_initial)
+      |   \-deletion (accounting.migrations.0001_initial,accounting.migrations.0002_auto_20161125_1107)
       \-shortcuts (accounting.views)
       \-test (accounting.tests)
 
@@ -59,13 +59,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |133    |70.74 |11131    |-10998.00  |
+|code      |133    |70.74 |133      |=          |
 +----------+-------+------+---------+-----------+
-|docstring |4      |2.13  |2770     |-2766.00   |
+|docstring |4      |2.13  |4        |=          |
 +----------+-------+------+---------+-----------+
-|comment   |11     |5.85  |813      |-802.00    |
+|comment   |11     |5.85  |11       |=          |
 +----------+-------+------+---------+-----------+
-|empty     |40     |21.28 |2397     |-2357.00   |
+|empty     |40     |21.28 |40       |=          |
 +----------+-------+------+---------+-----------+
 
 
@@ -76,9 +76,9 @@ Duplication
 +-------------------------+------+---------+-----------+
 |                         |now   |previous |difference |
 +=========================+======+=========+===========+
-|nb duplicated lines      |0     |95       |-95.00     |
+|nb duplicated lines      |0     |0        |=          |
 +-------------------------+------+---------+-----------+
-|percent duplicated lines |0.000 |0.565    |-0.57      |
+|percent duplicated lines |0.000 |0.000    |=          |
 +-------------------------+------+---------+-----------+
 
 
@@ -89,13 +89,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |1      |25       |-24.00     |
+|convention |1      |1        |=          |
 +-----------+-------+---------+-----------+
-|refactor   |0      |79       |-79.00     |
+|refactor   |0      |0        |=          |
 +-----------+-------+---------+-----------+
-|warning    |4      |147      |-143.00    |
+|warning    |4      |4        |=          |
 +-----------+-------+---------+-----------+
-|error      |0      |99       |-99.00     |
+|error      |0      |0        |=          |
 +-----------+-------+---------+-----------+
 
 
@@ -132,5 +132,5 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at 9.19/10 (previous run: 9.11/10, +0.08)
+Your code has been rated at 9.19/10 (previous run: 9.19/10, +0.00)
 
