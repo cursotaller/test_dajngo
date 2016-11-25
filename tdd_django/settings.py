@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+PROJECT_APPS = [
+    'accounting',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -40,9 +43,8 @@ INSTALLED_APPS = [
 
     'django_jenkins',
 
-    'accounting',
 
-]
+] + PROJECT_APPS
 
 JENKINS_TASKS = (
     'django_jenkins.tasks.run_pylint',
